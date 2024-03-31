@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div {
+    position: relative;
+    border: 2px dashed black;
+    width: 900px;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;    
+    font-size: 0; 
+    overflow: hidden;
+}
+
+img {
+    flex: 1;
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.left-button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);     
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    cursor: grab;
+    z-index: 999;
+}
+
+.right-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    cursor: grab;
+    z-index: 999;
+}
+
+.left-button svg, .right-button svg {
+    width: 30px;
+    height: 30px;
+    fill: rgba(255, 255, 255, 0.552); 
+}
